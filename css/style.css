@@ -6,11 +6,11 @@
 }
 
 :root {
-  --ink: #1b2430;      /* near-black navy for text/header */
-  --steel: #4a5a6a;     /* secondary steel-blue */
-  --copper: #b5652b;    /* copper-pipe accent */
+  --ink: #1b2430;      
+  --steel: #4a5a6a;     
+  --copper: #b5652b;    
   --copper-dark: #8f4e20;
-  --cream: #f6f3ee;     /* warm off-white background */
+  --cream: #f6f3ee;     
   --white: #ffffff;
   --border: #dcd5c9;
 
