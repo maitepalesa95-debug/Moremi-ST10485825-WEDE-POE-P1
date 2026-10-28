@@ -60,13 +60,41 @@ h3 { font-size: 1.1rem; margin-bottom: 0.3em; }
 p { margin-bottom: 1em; max-width: 65ch; }
 
 
-main {
+main ul {
   display: block;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 1.5rem 1.25rem 3rem;
 }
+.main-nav ul {
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+}
+
+.main-nav ul li {
+
+    float: left;
+
+}
+
+.main-nav ul li a {
+
+    display: block;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+}
+
 
 
 header {
@@ -261,7 +289,7 @@ figure:hover {
   border-color: var(--copper);
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (max-width: 960px) {
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -304,4 +332,22 @@ figure:hover {
   }
 
   h1 { font-size: 2.75rem; }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .main-nav ul {
+
+        display: block;
+
+    }
+
+    .main-nav ul li {
+
+        display: block;
+
+        padding: 10px 0;
+
+    }
+
 }
