@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | K-Plumbing</title>
-   <link rel="stylesheet" href="CSS\style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Our History, Team &amp; Accreditations | K-Plumbing</title>
+  <meta name="description" content="Learn about K-Plumbing's history, mission and vision, meet our Pretoria plumbing team, and see our licences, insurance and industry accreditations.">
+  <meta name="keywords" content="about K-Plumbing, plumbing company Pretoria, licensed plumber, plumbing team, plumbing accreditations, insured plumber">
+  <meta name="author" content="Palesa Moremi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-
   <header>
     <div class="logo">K-Plumbing</div>
-    <nav>
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="enquiry.html">Get a Quote</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -26,7 +32,7 @@
     <h1>About K-Plumbing</h1>
 
     <div class="two-col-grid">
-      <img src="image\OIP (2).webp" alt="K-Plumbing team on site">
+      <img src="image/emergency-callout-copper-pipes.webp" alt="K-Plumbing plumber working on copper pipes on site" loading="lazy">
       <div>
         <h2>Our History</h2>
         <p>K-Plumbing was founded to provide the local community with fast, honest, and reliable plumbing services. Since then, we have grown into a trusted name across the greater Pretoria area.</p>
@@ -56,7 +62,7 @@
     </div>
 
     <h2>Certifications &amp; Accreditations</h2>
-    <ul>
+    <ul class="checklist">
       <li>Licensed Plumber Registration</li>
       <li>Plumbing Industry Association Member</li>
       <li>Fully Insured &amp; Compliant with Local Building Regulations</li>
@@ -64,10 +70,8 @@
   </main>
 
   <footer>
-    <p>K-Plumbing &middot; 123 Main Road, Pretoria &middot;Call 012 942 9537/WhatsApp 066 251 6742</p>
+    <p>K-Plumbing &middot; 123 Main Road, Pretoria &middot; Call 012 942 9537 / WhatsApp 066 251 6742</p>
     <p>&copy; 2026 K-Plumbing. All rights reserved.</p>
   </footer>
- 
-
 </body>
 </html>

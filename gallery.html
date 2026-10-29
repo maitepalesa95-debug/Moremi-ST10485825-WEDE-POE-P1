@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Gallery | Plumbing Work in Pretoria | K-Plumbing</title>
+  <meta name="description" content="Browse K-Plumbing's job gallery: leak repairs, drain unblocking, geyser installs, bathroom renovations, pipe installation and emergency call-outs in Pretoria.">
+  <meta name="keywords" content="plumbing gallery, plumber before and after, leak repair photos, geyser installation, drain unblocking, pipe installation Pretoria">
+  <meta name="author" content="Palesa Moremi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">K-Plumbing</div>
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Job Gallery</h1>
+    <p>A selection of recent jobs completed by the K-Plumbing team. Select a photo to enlarge it.</p>
+
+    <div class="gallery-grid">
+      <figure>
+        <img src="image/leak-repair-pipe-wrench.jpg" alt="Leak repair: plumber tightening a basin pipe with a pipe wrench" loading="lazy">
+        <figcaption>Leak Repair</figcaption>
+      </figure>
+      <figure>
+        <img src="image/blocked-storm-drain-unblocking.jpg" alt="Drain unblocking job: blocked storm drain with standing water on paving" loading="lazy">
+        <figcaption>Drain Unblocking</figcaption>
+      </figure>
+      <figure>
+        <img src="image/geyser-installation-inspection.webp" alt="Geyser installation: plumber with a clipboard inspecting pipe connections under a geyser" loading="lazy">
+        <figcaption>Geyser Installation</figcaption>
+      </figure>
+      <figure>
+        <img src="image/bathroom-basin-pipework-renovation.webp" alt="Bathroom renovation: plumber fitting basin pipework" loading="lazy">
+        <figcaption>Bathroom Renovation</figcaption>
+      </figure>
+      <figure>
+        <img src="image/underground-pipe-installation-trench.webp" alt="Pipe installation: underground drainage pipes laid in a trench" loading="lazy">
+        <figcaption>Pipe Installation</figcaption>
+      </figure>
+      <figure>
+        <img src="image/emergency-callout-copper-pipes.webp" alt="Emergency callout: plumber working on copper pipes in a plant room" loading="lazy">
+        <figcaption>Emergency Callout</figcaption>
+      </figure>
+    </div>
+
+    <p>Like what you see? <a href="quote.html" class="cta-button">Get a Quote</a></p>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged gallery photo" hidden>
+      <button type="button" class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+      <button type="button" class="lb-prev" id="lbPrev" aria-label="Previous photo">&lsaquo;</button>
+      <img id="lbImg" alt="Enlarged gallery photo">
+      <p id="lbCaption"></p>
+      <button type="button" class="lb-next" id="lbNext" aria-label="Next photo">&rsaquo;</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>K-Plumbing &middot; 123 Main Road, Pretoria &middot; Call 012 942 9537 / WhatsApp 066 251 6742</p>
+    <p>&copy; 2026 K-Plumbing. All rights reserved.</p>
+  </footer>
+</body>
+</html>
