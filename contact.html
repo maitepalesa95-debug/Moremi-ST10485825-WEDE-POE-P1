@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Pretoria &amp; Centurion Branches | K-Plumbing</title>
+  <meta name="description" content="Contact K-Plumbing at our Pretoria or Centurion branch. Phone, email, opening hours, an interactive service area map and a message form.">
+  <meta name="keywords" content="contact plumber Pretoria, K-Plumbing contact, Centurion plumber, plumber phone number, plumbing service area map">
+  <meta name="author" content="Palesa Moremi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">K-Plumbing</div>
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <div class="two-col-grid">
+      <div>
+        <h2>Pretoria Branch</h2>
+        <p>123 Main Road, Pretoria CBD, 0002</p>
+        <p>Phone: <a href="tel:0129429537">012 942 9537</a></p>
+        <p>Email: <a href="mailto:pretoria@kplumbing.co.za">pretoria@kplumbing.co.za</a></p>
+        <p>Hours: Mon&ndash;Fri 7:00&ndash;17:00, Sat 8:00&ndash;13:00</p>
+      </div>
+      <div>
+        <h2>Centurion Branch</h2>
+        <p>45 Plumber Street, Centurion, 0157</p>
+        <p>Phone: <a href="tel:0120000000">012 000 0000</a></p>
+        <p>Email: <a href="mailto:centurion@kplumbing.co.za">centurion@kplumbing.co.za</a></p>
+        <p>Hours: Mon&ndash;Fri 7:00&ndash;17:00, Sat 8:00&ndash;13:00</p>
+      </div>
+    </div>
+
+    <h2>Find Us</h2>
+    <div class="map-tabs">
+      <button type="button" class="map-btn" aria-pressed="true" data-src="https://www.google.com/maps?output=embed&amp;q=Pretoria+CBD,+South+Africa">Pretoria</button>
+      <button type="button" class="map-btn" aria-pressed="false" data-src="https://www.google.com/maps?output=embed&amp;q=Centurion,+South+Africa">Centurion</button>
+    </div>
+    <iframe class="map-frame" id="mapFrame" title="Map of the Pretoria branch" src="https://www.google.com/maps?output=embed&amp;q=Pretoria+CBD,+South+Africa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h2>Send Us a Message</h2>
+    <form id="contactForm" novalidate>
+      <label for="conName">Full Name</label>
+      <input type="text" id="conName" required name="name" autocomplete="name" aria-describedby="conNameError">
+      <small class="field-error" id="conNameError" role="alert"></small>
+
+      <label for="conEmail">Email Address</label>
+      <input type="email" id="conEmail" required name="email" autocomplete="email" aria-describedby="conEmailError">
+      <small class="field-error" id="conEmailError" role="alert"></small>
+
+      <label for="conPhone">Phone Number (optional)</label>
+      <input type="tel" id="conPhone" name="phone" autocomplete="tel" placeholder="082 123 4567" aria-describedby="conPhoneError">
+      <small class="field-error" id="conPhoneError" role="alert"></small>
+
+      <label for="conReason">Reason for Contacting Us</label>
+      <select id="conReason" required name="reason" aria-describedby="conReasonError">
+        <option value="">Select a reason...</option>
+        <option value="general">General question</option>
+        <option value="existing">Existing job or invoice</option>
+        <option value="feedback">Feedback or compliment</option>
+        <option value="complaint">Complaint</option>
+        <option value="other">Other</option>
+      </select>
+      <small class="field-error" id="conReasonError" role="alert"></small>
+
+      <label for="conMessage">Message</label>
+      <textarea id="conMessage" required name="message" rows="4" aria-describedby="conMessageError"></textarea>
+      <small class="field-error" id="conMessageError" role="alert"></small>
+
+      <label class="choice"><input type="checkbox" id="conCopy" name="copy"> Send me a copy of my message</label>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="form-success" id="conResult" role="status" hidden></div>
+  </main>
+
+  <footer>
+    <p>K-Plumbing &middot; 123 Main Road, Pretoria &middot; Call 012 942 9537 / WhatsApp 066 251 6742</p>
+    <p>&copy; 2026 K-Plumbing. All rights reserved.</p>
+  </footer>
+</body>
+</html>

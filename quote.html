@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Free Plumbing Quote | K-Plumbing Pretoria</title>
+  <meta name="description" content="Request a free plumbing quote from K-Plumbing. Tell us the problem and we will get back to you quickly. Leaks, drains, geysers and emergencies in Pretoria.">
+  <meta name="keywords" content="free plumbing quote, plumber quote Pretoria, request a plumber, geyser quote, leak repair quote, emergency plumber">
+  <meta name="author" content="Palesa Moremi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">K-Plumbing</div>
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="quote.html" aria-current="page">Get a Quote</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Request a Free Quote</h1>
+    <p>Need a plumber urgently? Call us directly on <a href="tel:0129429537">012 942 9537</a>, or fill in the form below and we will get back to you as soon as possible.</p>
+
+    <form id="enquiryForm" novalidate>
+      <label for="enqName">Full Name</label>
+      <input type="text" id="enqName" required name="name" autocomplete="name" aria-describedby="enqNameError">
+      <small class="field-error" id="enqNameError" role="alert"></small>
+
+      <label for="enqEmail">Email Address</label>
+      <input type="email" id="enqEmail" required name="email" autocomplete="email" aria-describedby="enqEmailError">
+      <small class="field-error" id="enqEmailError" role="alert"></small>
+
+      <label for="enqPhone">Phone Number</label>
+      <input type="tel" id="enqPhone" required name="phone" autocomplete="tel" placeholder="082 123 4567" aria-describedby="enqPhoneError">
+      <small class="field-error" id="enqPhoneError" role="alert"></small>
+
+      <label for="enqService">Service Required</label>
+      <select id="enqService" required name="service" aria-describedby="enqServiceError">
+        <option value="">Select a service...</option>
+        <option value="leak">Leak Repairs &amp; Installs</option>
+        <option value="drains">Blocked Drains &amp; Geysers</option>
+        <option value="emergency">24/7 Emergency Callout</option>
+        <option value="reno">Bathroom &amp; Kitchen Renovation</option>
+        <option value="other">Other</option>
+      </select>
+      <small class="field-error" id="enqServiceError" role="alert"></small>
+
+      <fieldset>
+        <legend>Property Type</legend>
+        <label class="choice"><input type="radio" name="property" value="Home"> Home</label>
+        <label class="choice"><input type="radio" name="property" value="Business"> Business</label>
+        <small class="field-error" id="enqPropertyError" role="alert"></small>
+      </fieldset>
+
+      <label for="enqDetails">What is the problem?</label>
+      <textarea id="enqDetails" required name="details" rows="4" aria-describedby="enqDetailsError"></textarea>
+      <small class="field-error" id="enqDetailsError" role="alert"></small>
+
+      <label class="choice"><input type="checkbox" id="enqTerms" required name="terms"> I agree that K-Plumbing may contact me about this quote.</label>
+      <small class="field-error" id="enqTermsError" role="alert"></small>
+
+      <button type="submit">Request Quote</button>
+    </form>
+    <div class="form-success" id="enqResult" role="status" hidden></div>
+  </main>
+
+  <footer>
+    <p>K-Plumbing &middot; 123 Main Road, Pretoria &middot; Call 012 942 9537 / WhatsApp 066 251 6742</p>
+    <p>&copy; 2026 K-Plumbing. All rights reserved.</p>
+  </footer>
+</body>
+</html>
