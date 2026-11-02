@@ -1,6 +1,3 @@
-// main.js - interactive features for K-Plumbing (loaded on every page).
-// Each block first checks that its elements exist, because one file is shared by all pages.
-
 // 1. Mobile menu button
 const navToggle = document.getElementById("navToggle");
 const mainNav = document.getElementById("mainNav");
@@ -124,11 +121,9 @@ if (lightbox && galleryImages.length > 0) {
 
 
 // validation.js - validation for the Get a Quote (enquiry) and Contact forms.
-// Pattern from the WEDE5020 notes: read values -> test rules -> show/clear errors -> stop if invalid.
 
 const EMAIL_TO = "pretoria@kplumbing.co.za";
 
-// ---------- Helper functions (showError / clearError from the notes, plus the field's CSS class) ----------
 function showError(input, errorElement, message) {
   errorElement.textContent = message;
   if (input) {
